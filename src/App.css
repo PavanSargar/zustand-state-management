@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
+  padding: 2rem;
+  height: 100vh;
+  color: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.form-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.form-input {
+  padding: 0.75rem;
+  outline: none;
+  border: 3px solid #666;
+  width: 18rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-submit-btn {
+  background-color: #666;
+  padding: 0.75rem;
+  border: 1px solid #666;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 24rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 2px solid white;
+  margin: 1rem 0;
+  padding: 1rem;
+  color: black;
+  font-weight: bold;
+}
+
+.course-item-col-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.delete-btn {
+  padding: 0.5rem;
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
 }
